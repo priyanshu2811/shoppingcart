@@ -1,0 +1,44 @@
+/* src/components/ProductList.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.product {
+  background: #1e1e1e; /* Dark background for product cards */
+  border: 1px solid #333; /* Slightly lighter border */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 200px;
+}
+
+.product h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #e0e0e0; /* Light text color */
+}
+
+.product p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #b0b0b0; /* Slightly dimmer text color */
+}
+
+.product button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
