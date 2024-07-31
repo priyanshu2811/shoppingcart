@@ -1,44 +1,75 @@
-/* src/components/ProductList.css */
+.product-list-container {
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.9); /* Slightly transparent background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 1200px; /* Adjusted width for better display */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category-select {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1rem; /* Add some space between items */
+  justify-content: center; /* Center items */
 }
 
-.product {
-  background: #1e1e1e; /* Dark background for product cards */
-  border: 1px solid #333; /* Slightly lighter border */
-  border-radius: 8px;
+.product-card {
+  background: rgba(40, 40, 40, 0.9); /* Slightly transparent */
+  border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 250px; /* Adjust width as needed */
   text-align: center;
-  width: 200px;
+  transition: transform 0.3s;
 }
 
-.product h2 {
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  color: #e0e0e0;
   font-size: 1.2rem;
-  margin: 0.5rem 0;
-  color: #e0e0e0; /* Light text color */
+  margin-bottom: 0.5rem;
 }
 
-.product p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: #b0b0b0; /* Slightly dimmer text color */
+.product-price {
+  color: #ffcc00;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
-.product button {
-  background-color: #007bff;
-  color: white;
+.add-to-cart-button {
+  background: linear-gradient(135deg, #6b23e0, #b32ae8);
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 0.5rem;
 }
 
-.product button:hover {
-  background-color: #0056b3;
+.add-to-cart-button:hover {
+  background: linear-gradient(135deg, #b32ae8, #6b23e0);
+  transform: scale(1.05);
 }
